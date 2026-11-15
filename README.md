@@ -103,7 +103,7 @@ All three RSI methods operate on the **Alpha-RSI** benchmark domain:
 ## Directory Layout
 
 ```
-Special-Topics-in-AI/assignment-5-rsi/
+CMPE-297-Assg5/
 ├── common/                               # Core Foundation & Tripartite Abstractions
 │   ├── config.py                         # RSIExecutionConfig & environment sensing
 │   ├── llm_provider.py                   # Live Gemini & DeterministicMockProvider
@@ -179,20 +179,22 @@ Special-Topics-in-AI/assignment-5-rsi/
 Always use a dedicated virtual environment:
 
 ```bash
+# Clone this assignment repository
+git clone https://github.com/kalhar108/CMPE-297-Assg5.git
+cd CMPE-297-Assg5
+
 # Windows (PowerShell)
-cd "Special-Topics-in-AI/assignment-5-rsi"
 python -m venv .venv
 .\.venv\Scripts\activate
 
 # Linux / macOS
-cd "Special-Topics-in-AI/assignment-5-rsi"
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 ### 3. Install Dependencies
 ```bash
-pip install -r requirements.txt  # or install numpy pandas pydantic pytest google-genai
+pip install numpy pandas pydantic pytest google-genai
 ```
 
 ---
@@ -246,7 +248,7 @@ pytest tests/test_tier4_scenarios.py -v      # Tier 4: Real-World Scenarios (5 t
 ```
 ============================= test session starts =============================
 platform win32 -- Python 3.13.3, pytest-9.0.2, pluggy-1.6.0
-rootdir: Special-Topics-in-AI\assignment-5-rsi
+rootdir: CMPE-297-Assg5
 configfile: pytest.ini
 collected 78 items
 
