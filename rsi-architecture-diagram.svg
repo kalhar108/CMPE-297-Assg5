@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Recursive Self-Improvement architecture for Alpha-RSI</title>
+  <desc id="desc">A diagram showing market data flowing into an Alpha-RSI research loop, three recursive self-improvement methods, shared evaluation, telemetry, and comparative benchmarking.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101827"/><stop offset="1" stop-color="#171126"/></linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#163f5f"/><stop offset="1" stop-color="#25235b"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity=".45"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#d8e4f2"/></marker>
+    <style>
+      .box{fill:#202838;stroke:#9db0c8;stroke-width:2;filter:url(#shadow)}
+      .core{fill:url(#core);stroke:#70c7ff;stroke-width:2.5;filter:url(#shadow)}
+      .title{fill:#f5f8fc;font:700 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-anchor:middle}
+      .text{fill:#e7edf5;font:18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-anchor:middle}
+      .small{fill:#b9c8d8;font:15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-anchor:middle}
+      .edge{fill:none;stroke:#d8e4f2;stroke-width:2.5;marker-end:url(#arrow)}
+      .loop{fill:none;stroke:#70c7ff;stroke-width:2.5;stroke-dasharray:8 7;marker-end:url(#arrow)}
+      .tag{fill:#6b4bb8;stroke:#a993ec;stroke-width:1;rx:5}
+      .tagtext{fill:#fff;font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-anchor:middle}
+    </style>
+  </defs>
+  <rect width="1400" height="900" rx="20" fill="url(#bg)"/>
+  <text x="700" y="45" class="title" font-size="28">Alpha-RSI Recursive Self-Improvement Suite</text>
+  <text x="700" y="72" class="small">Section 10 codelabs · deterministic research loop for quantitative alpha discovery</text>
+
+  <rect class="box" x="60" y="145" width="230" height="110" rx="10"/>
+  <text class="title" x="175" y="180">Market data</text><text class="text" x="175" y="211">prices · features</text><text class="text" x="175" y="237">backtest windows</text>
+
+  <rect class="core" x="420" y="120" width="560" height="230" rx="16"/>
+  <text class="title" x="700" y="160">Alpha-RSI research loop</text>
+  <rect class="box" x="465" y="200" width="130" height="70" rx="8"/><text class="text" x="530" y="230">Generate</text><text class="small" x="530" y="252">candidate</text>
+  <rect class="box" x="635" y="200" width="130" height="70" rx="8"/><text class="text" x="700" y="230">Backtest</text><text class="small" x="700" y="252">simulate</text>
+  <rect class="box" x="805" y="200" width="130" height="70" rx="8"/><text class="text" x="870" y="230">Evaluate</text><text class="small" x="870" y="252">metrics</text>
+  <path class="edge" d="M595 235h40"/><path class="edge" d="M765 235h40"/><path class="loop" d="M870 275 C870 325 530 325 530 270"/>
+  <rect class="tag" x="656" y="292" width="88" height="25"/><text class="tagtext" x="700" y="310">refine</text>
+
+  <rect class="box" x="1080" y="145" width="260" height="110" rx="10"/>
+  <text class="title" x="1210" y="180">Objective</text><text class="text" x="1210" y="211">robust alpha signal</text><text class="text" x="1210" y="237">without weight updates</text>
+
+  <path class="edge" d="M290 200h130"/><path class="edge" d="M980 200h100"/>
+
+  <text class="title" x="700" y="405">Recursive improvement strategies</text>
+  <rect class="box" x="75" y="445" width="330" height="145" rx="12"/>
+  <text class="title" x="240" y="485">Dream-RSI</text><text class="text" x="240" y="518">world-model simulation</text><text class="text" x="240" y="545">counterfactual policy search</text><text class="small" x="240" y="570">01_dream_rsi/</text>
+  <rect class="box" x="535" y="445" width="330" height="145" rx="12"/>
+  <text class="title" x="700" y="485">AIDE2</text><text class="text" x="700" y="518">tree search over code</text><text class="text" x="700" y="545">iterative candidate refinement</text><text class="small" x="700" y="570">02_aide2/</text>
+  <rect class="box" x="995" y="445" width="330" height="145" rx="12"/>
+  <text class="title" x="1160" y="485">AI Scientist 2</text><text class="text" x="1160" y="518">hypothesis and ablation</text><text class="text" x="1160" y="545">simulated peer review</text><text class="small" x="1160" y="570">03_ai_scientist_2/</text>
+  <path class="edge" d="M530 350v55 C530 420 240 420 240 445"/><path class="edge" d="M700 350v95"/><path class="edge" d="M870 350v55 C870 420 1160 420 1160 445"/>
+
+  <rect class="box" x="220" y="680" width="300" height="115" rx="10"/>
+  <text class="title" x="370" y="718">Shared evaluation</text><text class="text" x="370" y="748">Sharpe · drawdown · stability</text><text class="small" x="370" y="773">common/domain/</text>
+  <rect class="box" x="550" y="680" width="300" height="115" rx="10"/>
+  <text class="title" x="700" y="718">Telemetry</text><text class="text" x="700" y="748">trees · traces · artifacts</text><text class="small" x="700" y="773">tests/ + recorded outputs</text>
+  <rect class="box" x="880" y="680" width="300" height="115" rx="10"/>
+  <text class="title" x="1030" y="718">Comparison benchmark</text><text class="text" x="1030" y="748">Pareto frontier and report</text><text class="small" x="1030" y="773">04_comparative_benchmark/</text>
+  <path class="edge" d="M240 590v45 C240 650 370 650 370 680"/><path class="edge" d="M700 590v90"/><path class="edge" d="M1160 590v45 C1160 650 1030 650 1030 680"/>
+  <path class="loop" d="M520 737 C590 820 810 820 880 737"/><rect class="tag" x="645" y="813" width="110" height="25"/><text class="tagtext" x="700" y="831">compare</text>
+</svg>

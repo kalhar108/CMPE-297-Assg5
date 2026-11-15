@@ -1,0 +1,115 @@
+{
+  "dream_rsi": {
+    "seed_comparisons": [
+      {
+        "seed": 42,
+        "best_g0_sharpe": 0.4856,
+        "g1_equal_weight_sharpe": 1.194,
+        "g1_outperforms_g0": true
+      },
+      {
+        "seed": 100,
+        "best_g0_sharpe": 0.451,
+        "g1_equal_weight_sharpe": 0.9368,
+        "g1_outperforms_g0": true
+      },
+      {
+        "seed": 2026,
+        "best_g0_sharpe": 0.4201,
+        "g1_equal_weight_sharpe": 1.5912,
+        "g1_outperforms_g0": true
+      }
+    ],
+    "hardcoded_strategy_in_demo": true,
+    "policy_has_code_synthesis_method": false
+  },
+  "aide2": {
+    "ast_repair_zero_division": false,
+    "ast_repair_syntax_error": true,
+    "ast_repair_index_error": true,
+    "metaharness_gens_returned": 3,
+    "metaharness_sharpes": [
+      1.1,
+      1.45,
+      1.82
+    ],
+    "child_nodes_evaluated": [
+      {
+        "search_gen": 0,
+        "node_id": "node_1",
+        "metrics_is_none": true,
+        "sharpe": 0.0
+      },
+      {
+        "search_gen": 0,
+        "node_id": "node_2",
+        "metrics_is_none": true,
+        "sharpe": 0.0
+      },
+      {
+        "search_gen": 1,
+        "node_id": "node_1",
+        "metrics_is_none": true,
+        "sharpe": 0.0
+      },
+      {
+        "search_gen": 1,
+        "node_id": "node_2",
+        "metrics_is_none": true,
+        "sharpe": 0.0
+      },
+      {
+        "search_gen": 2,
+        "node_id": "node_1",
+        "metrics_is_none": true,
+        "sharpe": 0.0
+      },
+      {
+        "search_gen": 2,
+        "node_id": "node_2",
+        "metrics_is_none": true,
+        "sharpe": 0.0
+      }
+    ]
+  },
+  "ai_scientist_2": {
+    "hypothesis_title": "Unfiltered Time-Series Momentum Continuation",
+    "hypothesis_has_formula": true,
+    "hypothesis_has_code": true,
+    "ablation_regimes_tested": [
+      "bull",
+      "choppy",
+      "crisis"
+    ],
+    "all_3_regimes_present": true,
+    "individual_reviews_count": 3,
+    "reviewer_personas": [
+      "Reviewer_1_Methodology",
+      "Reviewer_2_Theory",
+      "Reviewer_3_Risk"
+    ],
+    "has_area_chair_synthesis": true,
+    "mass_distilled_new_prior": true,
+    "priors_count_increased": true
+  },
+  "cli_stability": {
+    "aide2_generations_2_exit_code": 1,
+    "aide2_generations_2_has_index_error": true,
+    "aide2_generations_0_exit_code": 1,
+    "aide2_generations_0_has_index_error": true,
+    "ai_scientist_generations_0_exit_code": 1,
+    "ai_scientist_generations_0_has_error": true,
+    "cwd_matrix": {
+      "root_to_01_script": 0,
+      "asgn_to_01_script": 0,
+      "asgn_to_01_module": 0,
+      "inside_01_script": 0,
+      "inside_02_script": 0,
+      "inside_03_script": 0,
+      "inside_04_script": 0
+    },
+    "live_provider_init_class": "GeminiLiveProvider",
+    "live_call_raised_exception": "ConnectionError: Simulated Network Failure",
+    "live_call_raised_without_internal_fallback": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "status": "success",
+  "method": "Dream-RSI",
+  "execution_mode": "mock",
+  "total_time_ms": 57.21,
+  "gen0": {
+    "policy": {
+      "name": "Gen0_Baseline_Policy",
+      "branching_factor": 2,
+      "search_depth": 2,
+      "stopping_threshold": 1.5,
+      "novelty_weight": 0.2
+    },
+    "best_strategy": "MomentumFactor",
+    "sharpe_ratio": 0.4856,
+    "max_drawdown": 0.3131,
+    "evaluations_count": 4
+  },
+  "off_policy_dreaming": {
+    "evaluated_policies": 5,
+    "initial_dream_yield": 0.8794,
+    "best_dream_yield": 4.3042,
+    "dream_yield_delta": 3.4248,
+    "selected_policy": {
+      "name": "Deep_Aggressive",
+      "branching_factor": 5,
+      "search_depth": 5,
+      "stopping_threshold": 0.8,
+      "novelty_weight": 0.2
+    },
+    "dream_wall_time_ms": 0.1
+  },
+  "gen1": {
+    "policy": {
+      "name": "Deep_Aggressive",
+      "branching_factor": 5,
+      "search_depth": 5,
+      "stopping_threshold": 0.8,
+      "novelty_weight": 0.2
+    },
+    "best_strategy": "EqualWeightStrategy",
+    "sharpe_ratio": 1.1943,
+    "max_drawdown": 0.1159,
+    "evaluations_count": 2
+  },
+  "rsi_progression": {
+    "sharpe_delta": 0.7087,
+    "drawdown_reduction_pts": 19.72,
+    "compute_reduction_pct": 50.0,
+    "total_replay_transitions": 6,
+    "tree_max_depth": 2
+  }
+}
