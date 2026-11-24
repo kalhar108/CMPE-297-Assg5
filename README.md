@@ -6,6 +6,7 @@
 **Course:** CMPE-297, Special Topics in AI (Fall 2026)  
 **Topic:** Section 10 — Recursive Self-Improvement (RSI)  
 **Problem domain:** Quantitative alpha-feature discovery and algorithmic trading signals
+**Video Link**: https://youtu.be/CkXJ_cNRvQs?is=6PeVmOXOmRdiEzsh
 
 This is the CMPE-297-Assg5 repository for the Assignment 5 RSI project. The underlying implementation and existing walkthrough material have been retained from the supplied source; the original work is **not** represented as newly authored by the named student. Please review the code, add your own explanation and demonstrations, and follow your course's attribution requirements.
 
